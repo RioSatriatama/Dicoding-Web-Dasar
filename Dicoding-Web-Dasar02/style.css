@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0%;
+}
+
+h2,
+h3 {
+  color: #000;
+}
+
+p {
+  text-indent: 2em;
+  font-family: sans-serif;
+  text-align: justify;
+}
+
+#letter-spacing {
+  letter-spacing: 4px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 #3d434d;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* bagian header */
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #3a41fc;
+  background-image: repeating-linear-gradient(#3a41fc, #edeef5);
+  text-align: center;
+  color: black;
+}
+
+/* bagian navbar */
+nav {
+  background-color: #3a41fc;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fce4ec;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+  color: black;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+/* Pengaturan image  */
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+  transition: transfrom 0.2s;
+  border-radius: 5px;
+}
+
+.featured-image:hover {
+  transform: scale(1.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Pengaturan main */
+main {
+  padding: 20px;
+  overflow: auto;
+  background-color: #3a41fc;
+}
+
+.content {
+  float: left;
+  width: 70%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* Pengaturan Flexbox */
+.flex-container {
+  display: flex;
+  background-color: #3a41fc;
+}
+
+.flex-container > div {
+  background-color: #fff;
+  margin: 10px;
+  padding: 20px;
+  font-size: 12px;
+}
+
+/* Pengaturan aside */
+aside {
+  float: right;
+  width: 30%;
+  padding: 10px;
+}
+
+.profile {
+  text-align: center;
+  background-color: #fff;
+}
+
+/* Pengaturan footer */
+footer {
+  padding: 15px;
+  color: #fff;
+  background-color: #3a41fc;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Pengaturan Reponsive */
+@media screen and (max-width: 1000px) {
+  .content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
